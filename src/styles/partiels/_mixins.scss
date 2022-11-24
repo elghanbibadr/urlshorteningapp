@@ -1,0 +1,16 @@
+@mixin mobile {
+    @media screen and (max-width:$mobile) {
+        @content;
+    }
+}
+@mixin desktop{
+    @media screen and (min-width:$desktop) {
+        @content;
+    }
+}
+
+@mixin flexBtween($alignItems){
+    display: flex;
+    justify-content: space-between;
+    align-items: $alignItems;
+} 
