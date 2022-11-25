@@ -45,4 +45,17 @@ p {
   line-height: 1.6;
   font-weight: 500;
 }
+
+@media screen and (min-width: 700px) {
+  h1 {
+    font-size: 5.8rem;
+    max-width: 15ch;
+  }
+  h2 {
+    font-size: 3.8rem;
+  }
+  p {
+    font-size: 2rem;
+  }
+}
 /*# sourceMappingURL=main.css.map */
