@@ -1,11 +1,13 @@
+import Nav from "./Componenet/Nav";
+
 
 function App() {
   return (
   <>
-  <button className="btn btn--rounded">Get started</button>
-
-  </>
+<Nav/>
+</>
   );
 }
+
 
 export default App;
