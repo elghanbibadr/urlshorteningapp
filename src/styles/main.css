@@ -74,4 +74,24 @@ p {
   border-radius: 30px;
   padding-inline: 3rem;
 }
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__hamburger, .nav__close {
+  height: 2rem;
+}
+
+.hidden {
+  display: none;
+}
 /*# sourceMappingURL=main.css.map */

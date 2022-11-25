@@ -1,0 +1,8 @@
+.nav{  
+ &__hamburger,&__close{
+    height: 1rem;
+    
+ }
+ background-color: red;
+// @include flexBtween(center);
+}

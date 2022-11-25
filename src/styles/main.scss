@@ -5,3 +5,9 @@
 @import './partiels/mixins';
 @import './partiels/typography';
 @import './partiels/btn';
+@import './partiels/nav';
+
+
+.hidden{
+    display: none;
+}
