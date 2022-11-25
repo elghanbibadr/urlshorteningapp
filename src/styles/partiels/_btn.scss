@@ -1,0 +1,16 @@
+.btn{
+    padding-block: 1.3rem;
+    background-color: $lightCyan;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: inherit;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.btn--rounded{
+    border-radius: 30px;
+    padding-inline: 3rem;
+}
+
