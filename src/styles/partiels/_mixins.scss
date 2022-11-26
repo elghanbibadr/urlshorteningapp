@@ -4,6 +4,7 @@
     }
 }
 
+
 @mixin tablette{
     @media screen and (min-width:$tablette) {
         @content;
@@ -19,7 +20,7 @@
 
 
 @mixin desktop{
-    @media screen and (min-width:$desktop) {
+    @media screen and (min-width:$Desktop) {
         @content;
     }
 }

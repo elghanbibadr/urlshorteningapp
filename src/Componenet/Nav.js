@@ -1,12 +1,15 @@
-
+import { useState } from "react";
 const Nav=()=>{
+    const [isListVisible,setListIsVisible]=useState(false);
+    const handleIconClick=()=>setListIsVisible(!isListVisible);
+
     return(
         <header>
             <nav className="nav">
               <img className="nav__logo" src='/images/logo.svg'/> 
-             <img className="nav__hamburger" src='/images/bars-solid.svg'/>
-             <img className="nav__close" src='/images/xmark-solid.svg'/>
-             <ul className="nav__list nav_list-collapsible">
+             <img onClick={handleIconClick} className={`nav__hamburger ${isListVisible ?'hidden' :''}`} src='/images/bars-solid.svg'/>
+             <img onClick={handleIconClick}  className={`nav__hamburger ${!isListVisible ?'hidden' :''}`} src='/images/xmark-solid.svg'/>
+             <ul className={`nav__list nav_list-collapsible ${!isListVisible ? 'hidden-list':''}`}>
                 <li className="nav__list-link">Features</li>
                 <li className="nav__list-link">Pricing</li>
                 <li className="nav__list-link">Resources</li>

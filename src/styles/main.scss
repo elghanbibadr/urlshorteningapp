@@ -8,74 +8,86 @@
 @import './partiels/nav';
 
 
-.hidden{
-    display: none !important;
-}
+.hidden {
+    display: none !important ;
+ }
 
-.nav{
+ .hidden-list{
+    visibility: none;
+    opacity: 0;
+    
+ }
+ 
+ .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-   &__hamburger,&__close{
-    height: 3rem;
-    @include tablette{
-        display: none;
-    }
-}
-
-&__close{
-    display: none;
-}
-
-&__list{
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 1.5rem;
-    @include tablette{
-    display: inherit;
-    grid-template-columns: 1fr 1fr 2fr 1fr auto;
-    align-items: center;
-    button{
-        padding: 12px;
-        font-size: 1.3rem;
-    }
-    }
-}
-
-@include tablette{
-    display: grid;
-    grid-template-columns: 200px 1fr;
-   padding: 3rem;
-}
-}
-
-// this class will appears only for mobile devices annd small tablettes
-.nav_list-collapsible{
-    @include tabletteMax{
-
-    display: flex;
-    flex-direction: column;
-    background-color:$darkBlue;
-    position: absolute;
-    max-width: 420px;
-    max-height: 60vh;
-    top: 7rem;
-    left: 0;
-    right: 0;
-    margin-inline: auto;
-    padding: 1rem;
-    text-align: center;
-    border-radius: 20px;
-    li{
-        margin-block: 2rem;
-   
-        button{
-            padding: 1rem;
-            font-size: 1.5rem;
-            width: 80%;
-            border: 0;
+ 
+    &__hamburger,
+    &__close {
+        height: 3rem;
+ 
+        @include tablette {
+            display: none;
         }
     }
-}
-}
+ 
+ //    &__close {
+ //        display: none;
+ //    }
+ 
+    &__list {
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 1.5rem;
+ 
+        @include tablette {
+            display: inherit !important;
+            grid-template-columns: 1fr 1fr 2fr 1fr auto;
+            align-items: center;
+ 
+            button {
+                padding: 12px;
+                font-size: 1.3rem;
+            }
+        }
+    }
+ 
+    @include tablette {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        padding: 3rem;
+    }
+ }
+ 
+ // this class will appears only for mobile devices annd small tablettes
+ .nav_list-collapsible {
+    @include tabletteMax {
+ 
+        display: flex;
+        flex-direction: column;
+        background-color: $darkBlue;
+        position: absolute;
+        max-width: 420px;
+        max-height: 60vh;
+        top: 7rem;
+        left: 0;
+        right: 0;
+        margin-inline: auto;
+        padding: 1rem;
+        text-align: center;
+        border-radius: 20px;
+ 
+        li {
+            margin-block: 2rem;
+ 
+            button {
+                padding: 1rem;
+                font-size: 1.5rem;
+                width: 80%;
+                border: 0;
+            }
+        }
+    }
+ }

@@ -28,7 +28,6 @@ a {
 }
 
 body {
-  background-color: black;
   color: white;
   letter-spacing: 0.3px;
 }
@@ -109,8 +108,100 @@ p {
   }
 }
 
-.nav__close {
-  display: none;
+.nav__list {
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 900px) {
+  .nav__list {
+    display: inherit;
+    -ms-grid-columns: 1fr 1fr 2fr 1fr auto;
+        grid-template-columns: 1fr 1fr 2fr 1fr auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .nav__list button {
+    padding: 12px;
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .nav {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 200px 1fr;
+        grid-template-columns: 200px 1fr;
+    padding: 3rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .nav_list-collapsible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #4b406b;
+    position: absolute;
+    max-width: 420px;
+    max-height: 60vh;
+    top: 7rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 20px;
+  }
+  .nav_list-collapsible li {
+    margin-block: 2rem;
+  }
+  .nav_list-collapsible li button {
+    padding: 1rem;
+    font-size: 1.5rem;
+    width: 80%;
+    border: 0;
+  }
+}
+
+.hidden {
+  display: none !important;
+}
+
+.hidden-list {
+  visibility: none;
+  opacity: 0;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.nav__hamburger, .nav__close {
+  height: 3rem;
+}
+
+@media screen and (min-width: 900px) {
+  .nav__hamburger, .nav__close {
+    display: none;
+  }
 }
 
 .nav__list {
@@ -121,7 +212,7 @@ p {
 
 @media screen and (min-width: 900px) {
   .nav__list {
-    display: inherit;
+    display: inherit !important;
     -ms-grid-columns: 1fr 1fr 2fr 1fr auto;
         grid-template-columns: 1fr 1fr 2fr 1fr auto;
     -webkit-box-align: center;
