@@ -10,6 +10,14 @@
     }
 }
 
+@mixin tabletteMax{
+    @media screen and (max-width:$tablette) {
+        @content;
+    }
+}
+
+
+
 @mixin desktop{
     @media screen and (min-width:$desktop) {
         @content;
