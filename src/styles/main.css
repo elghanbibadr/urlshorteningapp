@@ -12,10 +12,15 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
+  padding: 1rem;
 }
 
 ul {
   list-style: none;
+}
+
+img {
+  cursor: pointer;
 }
 
 a {
@@ -75,6 +80,10 @@ p {
   padding-inline: 3rem;
 }
 
+.hidden {
+  display: none;
+}
+
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -88,10 +97,15 @@ p {
 }
 
 .nav__hamburger, .nav__close {
-  height: 2rem;
+  height: 3rem;
 }
 
-.hidden {
+.nav__close {
   display: none;
+}
+
+.showList {
+  display: block;
+  background-color: #4b406b;
 }
 /*# sourceMappingURL=main.css.map */

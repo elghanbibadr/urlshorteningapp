@@ -11,3 +11,23 @@
 .hidden{
     display: none;
 }
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   &__hamburger,&__close{
+    height: 3rem;
+}
+
+&__close{
+    display: none;
+}
+
+// @include flexBetween(center);
+}
+.showList{
+    display: block;
+    background-color: $darkBlue;
+
+}
