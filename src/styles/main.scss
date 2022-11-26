@@ -9,13 +9,14 @@
 
 
 .hidden{
-    display: none;
+    // display: none !important;
 }
 
 .nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
    &__hamburger,&__close{
     height: 3rem;
 }
@@ -24,10 +25,39 @@
     display: none;
 }
 
-// @include flexBetween(center);
-}
-.showList{
-    display: block;
-    background-color: $darkBlue;
+&__list{
 
+}
+
+}
+
+// this class will appears only for mobile devices annd small tablettes
+.nav_list-collapsible{
+    display: flex;
+    flex-direction: column;
+    background-color:$darkBlue;
+    position: absolute;
+    width: 420px;
+    height: 60vh;
+    top: 7rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 20px;
+    li{
+        margin-block: 2rem;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 1.7rem;
+        button{
+            padding: 1rem;
+            font-size: 1.5rem;
+            width: 80%;
+            border: 0;
+        }
+    }
+   
+    
 }

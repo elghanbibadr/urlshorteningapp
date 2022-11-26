@@ -6,7 +6,7 @@ const Nav=()=>{
               <img className="nav__logo" src='/images/logo.svg'/> 
              <img className="nav__hamburger" src='/images/bars-solid.svg'/>
              <img className="nav__close" src='/images/xmark-solid.svg'/>
-             <ul className="nav__list showList  ">
+             <ul className="nav__list nav_list-collapsible hidden ">
                 <li className="nav__list-link">Features</li>
                 <li className="nav__list-link">Pricing</li>
                 <li className="nav__list-link">Resources</li>
