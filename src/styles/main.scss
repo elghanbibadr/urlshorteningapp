@@ -9,14 +9,17 @@
 
 
 .hidden {
-    display: none !important ;
+    display: none;
  }
 
  .hidden-list{
-    visibility: none;
-    opacity: 0;
-    
- }
+    // display: block !important;
+     @include tabletteMax{
+         display: none;
+     }
+    }
+ 
+   
  
  .nav {
     display: flex;
@@ -41,12 +44,17 @@
         font-weight: bold;
         cursor: pointer;
         font-size: 1.5rem;
- 
+        li{
+            transition: color 0.5s;
+        }
         @include tablette {
-            display: inherit !important;
-            grid-template-columns: 1fr 1fr 2fr 1fr auto;
-            align-items: center;
- 
+            display: inherit;
+             grid-template-columns: 1fr 1fr 2fr 1fr auto;
+             align-items: center;
+             color: $darkLight;
+             li:hover{
+                color: $heading
+             }
             button {
                 padding: 12px;
                 font-size: 1.3rem;

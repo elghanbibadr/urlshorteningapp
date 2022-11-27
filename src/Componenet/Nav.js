@@ -8,8 +8,8 @@ const Nav=()=>{
             <nav className="nav">
               <img className="nav__logo" src='/images/logo.svg'/> 
              <img onClick={handleIconClick} className={`nav__hamburger ${isListVisible ?'hidden' :''}`} src='/images/bars-solid.svg'/>
-             <img onClick={handleIconClick}  className={`nav__hamburger ${!isListVisible ?'hidden' :''}`} src='/images/xmark-solid.svg'/>
-             <ul className={`nav__list nav_list-collapsible ${!isListVisible ? 'hidden-list':''}`}>
+             <img onClick={handleIconClick}  className={`nav__close ${!isListVisible ?'hidden' :''}`} src='/images/xmark-solid.svg'/>
+             <ul className={`nav__list nav_list-collapsible ${!isListVisible ? 'hidden':''}`}>
                 <li className="nav__list-link">Features</li>
                 <li className="nav__list-link">Pricing</li>
                 <li className="nav__list-link">Resources</li>

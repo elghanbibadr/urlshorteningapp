@@ -70,9 +70,16 @@ p {
   font-weight: bold;
   font-size: 2rem;
   outline: none;
+  border: 0;
   font-family: inherit;
   cursor: pointer;
   text-transform: capitalize;
+  -webkit-transition: background 0.5s;
+  transition: background 0.5s;
+}
+
+.btn:hover {
+  background-color: #59c1c1;
 }
 
 .btn--rounded {
@@ -172,12 +179,13 @@ p {
 }
 
 .hidden {
-  display: none !important;
+  display: none;
 }
 
-.hidden-list {
-  visibility: none;
-  opacity: 0;
+@media screen and (max-width: 900px) {
+  .hidden-list {
+    display: none;
+  }
 }
 
 .nav {
@@ -210,14 +218,23 @@ p {
   font-size: 1.5rem;
 }
 
+.nav__list li {
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
 @media screen and (min-width: 900px) {
   .nav__list {
-    display: inherit !important;
+    display: inherit;
     -ms-grid-columns: 1fr 1fr 2fr 1fr auto;
         grid-template-columns: 1fr 1fr 2fr 1fr auto;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    color: #dddcdf;
+  }
+  .nav__list li:hover {
+    color: #37343e;
   }
   .nav__list button {
     padding: 12px;
