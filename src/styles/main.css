@@ -182,12 +182,6 @@ p {
   display: none;
 }
 
-@media screen and (max-width: 900px) {
-  .hidden-list {
-    display: none;
-  }
-}
-
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;

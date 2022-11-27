@@ -11,15 +11,6 @@
 .hidden {
     display: none;
  }
-
- .hidden-list{
-    // display: block !important;
-     @include tabletteMax{
-         display: none;
-     }
-    }
- 
-   
  
  .nav {
     display: flex;
