@@ -1,0 +1,12 @@
+
+@include tablette{
+    .grid{
+        display: grid;
+        gap: 1rem;
+    }
+    
+    .grid--cls2{
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
