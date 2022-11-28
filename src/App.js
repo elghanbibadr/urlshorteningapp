@@ -1,8 +1,7 @@
 import React from "react";
-import Nav from "./Componenet/Nav";
 import './styles/main.css';
+import Nav from "./Componenet/Nav";
 import Hero from "./Componenet/Hero";
-import Hero from "./Componenet/UrlShortenForm";
 import UrlShortenForm from "./Componenet/UrlShortenForm";
 
 function App() {
