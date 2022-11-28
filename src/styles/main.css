@@ -186,4 +186,10 @@ p {
     border: 0;
   }
 }
+
+@media screen and (max-width: 900px) {
+  .hidden-list {
+    display: none !important;
+  }
+}
 /*# sourceMappingURL=main.css.map */

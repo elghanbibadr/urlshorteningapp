@@ -83,3 +83,9 @@
     }
 }
 
+
+@include tabletteMax{
+    .hidden-list{
+        display: none !important;
+    }
+}
