@@ -27,6 +27,13 @@ a {
   text-decoration: none;
 }
 
+.card {
+  width: 80%;
+  border-radius: 10px;
+  padding: 2rem;
+  margin-inline: auto;
+}
+
 body {
   color: white;
   letter-spacing: 0.3px;
@@ -261,11 +268,7 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 80%;
   background-color: #4b406b;
-  border-radius: 10px;
-  padding: 2rem;
-  margin-inline: auto;
 }
 
 .urlShortenForm__input {
@@ -311,6 +314,59 @@ p {
             flex-direction: row;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.urlShortendList {
+  background-color: white;
+  color: #2bd1d1;
+  border: 1px solid #d9d8db;
+  margin-top: 3rem;
+}
+
+.urlShortendList li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.urlShortendList button {
+  border-radius: 10px;
+  padding: 1.5rem 1rem;
+  width: 80%;
+  margin-block: 1.5rem;
+}
+
+@media screen and (min-width: 900px) {
+  .urlShortendList button {
+    width: 30%;
+  }
+}
+
+.urlShortendList p {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 900px) {
+  .urlShortendList li {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;

@@ -17,14 +17,13 @@ const  UrlShortenForm= (props)=> {
         .then(res=>{
           let {short_link,short_link2,short_link3}=res.data.result;
           setShortened([short_link,short_link2,short_link3]);
-          console.log(shortened);
 
         }).catch(err=>alert(err))
     }
 
     return (
         <div className='container'>
-           <form onSubmit={handleFormSubmition} className='urlShortenForm'>
+           <form onSubmit={handleFormSubmition} className='urlShortenForm card'>
             <input className='urlShortenForm__input' type="text" placeholder='Shorten a link here'/>
             <button className='btn urlShortenForm__btn'>Shorten it!</button>
            </form>

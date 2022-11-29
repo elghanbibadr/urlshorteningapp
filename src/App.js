@@ -3,6 +3,7 @@ import './styles/main.css';
 import Nav from "./Componenet/Nav";
 import Hero from "./Componenet/Hero";
 import UrlShortenForm from "./Componenet/UrlShortenForm";
+import UrlShortenResult from "./Componenet/UrlShortenResult";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
  <Nav/>
   <Hero/>
   <UrlShortenForm/>
+  <UrlShortenResult/>
 </>
   );
 }
