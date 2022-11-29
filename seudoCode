@@ -3,3 +3,6 @@
 3-identify the semantic html for your website
 4-identify the componenet
 5-create each file.js for the component and name them and also create private stylesheet for it
+----->seudo code for the urlshortening form
+
+1-create a container that hold a form componenet and and a result div that has a list of results
