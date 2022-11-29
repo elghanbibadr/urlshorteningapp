@@ -9,12 +9,10 @@ function UrlShortenContainer(props) {
     const [shortened,setShortened]=useState([]);
     const [dataArrived,setDataArrived]=useState(false)
     const handleGrabedInputValue=(inputValue)=>{
-        axios.get(`https://api.shrtco.de/v2/shorten?url=${inputValue}`
-         )
+        axios.get(`https://api.shrtco.de/v2/shorten?url=${inputValue}`)
          .then(res=>{
            let {short_link,short_link2,short_link3}=res.data.result;
            setShortened([short_link,short_link2,short_link3]);
-           console.log(res.data.result)
          }).catch(err=>alert(err)).finally(()=>setDataArrived(true));
     }
 
