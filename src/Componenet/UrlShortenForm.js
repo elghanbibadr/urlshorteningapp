@@ -15,8 +15,9 @@ const  UrlShortenForm= (props)=> {
         axios.get(`https://api.shrtco.de/v2/shorten?url=${inputValue}`
         )
         .then(res=>{
-           setShortened(res.data.result);
-           console.log(shortened)
+          let {short_link,short_link2,short_link3}=res.data.result;
+          setShortened([short_link,short_link2,short_link3]);
+          console.log(shortened);
 
         }).catch(err=>alert(err))
     }
