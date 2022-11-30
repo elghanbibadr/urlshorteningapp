@@ -9,3 +9,47 @@
 @import './partiels/hero';
 @import './partiels/grid';
 @import './partiels/urlShorteningContainer';
+
+
+.statistics{
+    background-color: #f0f1f6;
+    margin-top: 7rem;
+    padding: 2rem;
+    text-align: center;
+    &__title,&__card__title{
+        color: $heading;
+        margin-block: 3rem;
+    }
+
+    &__desc,&__card__text{
+        color:$lightGray;
+        margin-block: 3rem;
+    }
+
+    &__card-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // justify-content: center;
+    }
+
+    &__card{
+        background-color: white;
+        margin: 6rem 2rem;
+        padding: 2rem;
+        width: 80%;
+        max-width: 500px;
+        border-radius: 10px;
+        &__logo-wrapper{
+            background-color:$heading;
+            border-radius: 50%;
+            width: 7rem;
+            height: 7rem;
+            position: relative;
+            top: -60px;
+            display: inline-flex;
+            padding: 2rem;
+            // height: 10rem;
+        }
+    }
+}
