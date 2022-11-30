@@ -422,6 +422,7 @@ p {
   margin: 6rem 2rem;
   padding: 2rem;
   max-width: 350px;
+  z-index: 2;
   border-radius: 6px;
   position: relative;
 }
@@ -437,6 +438,7 @@ p {
   display: -ms-inline-flexbox;
   display: inline-flex;
   padding: 2rem;
+  z-index: 9999999;
 }
 
 @media screen and (min-width: 900px) {
@@ -453,5 +455,34 @@ p {
 
 .statistics__card__text {
   font-size: 1.6rem;
+}
+
+.statistics__card:nth-child(2)::after, .statistics__card:nth-child(2)::before {
+  content: '';
+  display: inline-block;
+  background-color: #2bd1d1;
+  height: 1rem;
+  width: 9rem;
+  position: absolute;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  z-index: 1;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+}
+
+@media screen and (min-width: 900px) {
+  .statistics__card:nth-child(2)::after, .statistics__card:nth-child(2)::before {
+    display: none;
+  }
+}
+
+.statistics__card:nth-child(2)::before {
+  top: -8rem;
+}
+
+.statistics__card:nth-child(2)::after {
+  bottom: -5rem;
 }
 /*# sourceMappingURL=main.css.map */

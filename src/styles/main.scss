@@ -41,6 +41,7 @@
         padding: 2rem;
         // width: 80%;
         max-width: 350px;
+        z-index:2;
         border-radius: 6px;
         position: relative;
         &__logo-wrapper{
@@ -52,6 +53,7 @@
             top: -60px;
             display: inline-flex;
             padding: 2rem;
+            z-index: 9999999;
         }
         @include tablette{
             max-width: 300px;
@@ -64,6 +66,30 @@
         }
         &__text{
           font-size: 1.6rem;
+        }
+        &:nth-child(2)::after,&:nth-child(2)::before{
+         content: '';
+         display: inline-block;
+         background-color: $lightCyan;
+         height: 1rem;
+         width:9rem;
+         position: absolute;
+         transform:rotate(90deg);
+         z-index: 1;
+         left: 0;
+         right: 0;
+         margin-inline: auto;
+         @include tablette{
+            display: none;
+         }
+        }
+
+        &:nth-child(2)::before{
+            top: -8rem;
+        }
+        &:nth-child(2)::after{
+            bottom:-5rem;
+
         }
     }
 }
