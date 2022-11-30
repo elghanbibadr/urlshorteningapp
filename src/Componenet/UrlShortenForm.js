@@ -3,6 +3,8 @@ import React ,{useState,useEffect} from 'react';
 
 
 const  UrlShortenForm= (props)=> {
+  const handleInputFocused=(e)=>e.target.classList.add('input-redBorder');
+  const handleInputUnFocused=(e)=>e.target.classList.remove('input-redBorder');
   const [inputContent,setInputContent]=useState('');
 
     const handleFormSubmition=(event)=>{
@@ -16,7 +18,7 @@ const  UrlShortenForm= (props)=> {
     return (
         <div className='container'>
            <form onSubmit={handleFormSubmition} className='urlShortenForm card'>
-            <input className='urlShortenForm__input' onChange={(e)=>setInputContent(e.target.value)} value={inputContent} type="text"  placeholder='Shorten a link here'/>
+            <input onBlur={handleInputUnFocused} onFocus={handleInputFocused} className='urlShortenForm__input' onChange={(e)=>setInputContent(e.target.value)} value={inputContent} type="text"  placeholder='Shorten a link here'/>
             <button className='btn urlShortenForm__btn'>Shorten it!</button>
            </form>
         </div>

@@ -372,4 +372,8 @@ p {
             align-items: center;
   }
 }
+
+.input-redBorder {
+  border: 1px solid red;
+}
 /*# sourceMappingURL=main.css.map */
