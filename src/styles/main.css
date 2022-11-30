@@ -48,7 +48,7 @@ h2 {
 }
 
 h3 {
-  font-size: 2.2rem;
+  font-size: 2rem;
 }
 
 p {
@@ -380,13 +380,12 @@ p {
 .statistics {
   background-color: #f0f1f6;
   margin-top: 7rem;
-  padding: 2rem;
+  padding: 4rem 2rem;
   text-align: center;
 }
 
 .statistics__title, .statistics__card__title {
   color: #37343e;
-  margin-block: 3rem;
 }
 
 .statistics__desc, .statistics__card__text {
@@ -413,7 +412,7 @@ p {
   padding: 2rem;
   width: 80%;
   max-width: 500px;
-  border-radius: 10px;
+  border-radius: 6px;
 }
 
 .statistics__card__logo-wrapper {
@@ -427,5 +426,9 @@ p {
   display: -ms-inline-flexbox;
   display: inline-flex;
   padding: 2rem;
+}
+
+.statistics__card__title {
+  font-size: 2rem;
 }
 /*# sourceMappingURL=main.css.map */
