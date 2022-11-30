@@ -323,7 +323,7 @@ p {
 .urlShortendList {
   background-color: white;
   color: #2bd1d1;
-  border: 1px solid #d9d8db;
+  border: 1px solid #9e9aa7;
   margin-top: 3rem;
 }
 
@@ -389,7 +389,7 @@ p {
 }
 
 .statistics__desc, .statistics__card__text {
-  color: #d9d8db;
+  color: #9e9aa7;
   margin-block: 3rem;
 }
 
@@ -406,13 +406,24 @@ p {
           align-items: center;
 }
 
+@media screen and (min-width: 900px) {
+  .statistics__card-container {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 .statistics__card {
   background-color: white;
   margin: 6rem 2rem;
   padding: 2rem;
-  width: 80%;
-  max-width: 500px;
+  max-width: 350px;
   border-radius: 6px;
+  position: relative;
 }
 
 .statistics__card__logo-wrapper {
@@ -420,7 +431,7 @@ p {
   border-radius: 50%;
   width: 7rem;
   height: 7rem;
-  position: relative;
+  position: inherit;
   top: -60px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -428,7 +439,19 @@ p {
   padding: 2rem;
 }
 
-.statistics__card__title {
-  font-size: 2rem;
+@media screen and (min-width: 900px) {
+  .statistics__card {
+    max-width: 300px;
+  }
+  .statistics__card:nth-child(2) {
+    top: 9rem;
+  }
+  .statistics__card:nth-child(3) {
+    top: 17rem;
+  }
+}
+
+.statistics__card__text {
+  font-size: 1.6rem;
 }
 /*# sourceMappingURL=main.css.map */
