@@ -485,4 +485,29 @@ p {
 .statistics__card:nth-child(2)::after {
   bottom: -5rem;
 }
+
+main {
+  background-color: #f0f1f6;
+}
+
+.callout {
+  background-color: #4b406b;
+  text-align: center;
+  margin-top: 6rem;
+  padding: 4rem 2rem;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 900px) {
+  .callout {
+    margin-top: 12rem;
+  }
+}
+
+.callout__title {
+  color: white;
+  font-weight: bold;
+  margin-block: 3rem;
+  font-size: 3rem;
+}
 /*# sourceMappingURL=main.css.map */
