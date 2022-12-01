@@ -573,10 +573,12 @@ p {
 }
 
 .footer__media-icons-box {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1r 1fr 1fr;
-      grid-template-columns: 1fr 1r 1fr 1fr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .footer__media-icons {
@@ -584,6 +586,7 @@ p {
   transition: -webkit-transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
+  margin-inline: 1rem;
 }
 
 .footer__media-icons:hover {

@@ -33,13 +33,12 @@
     }
 
     &__media-icons-box{
-     display: grid;
-    grid-template-columns: 1fr 1r 1fr 1fr;
-    //  justify-content: space-around;
+     display: flex;
+    justify-content: space-between;
     }
     &__media-icons {
-        // margin: 2rem 1rem;
         transition: transform 0.4s;
+       margin-inline:1rem;
 
         &:hover {
             transform: scale(1.1);
