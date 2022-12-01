@@ -32,8 +32,13 @@
         }
     }
 
+    &__media-icons-box{
+     display: grid;
+    grid-template-columns: 1fr 1r 1fr 1fr;
+    //  justify-content: space-around;
+    }
     &__media-icons {
-        margin: 2rem 1.2rem;
+        // margin: 2rem 1rem;
         transition: transform 0.4s;
 
         &:hover {
