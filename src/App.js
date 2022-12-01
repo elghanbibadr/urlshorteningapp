@@ -5,6 +5,7 @@ import Hero from "./Componenet/Hero";
 import UrlShortenContainer from "./Componenet/UrlShortenContainer";
 import Statistics from "./Componenet/Statistics";
 import Callout from "./Componenet/Callout";
+import Footer from "./Componenet/Footer";
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
   <Statistics/>
   <Callout/>
   </main>
-</>
+  <Footer/>
+  </>
   );
 }
 

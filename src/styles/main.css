@@ -254,6 +254,14 @@ p {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
   }
+  .grid--cls5 {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+  }
 }
 
 .container {
@@ -509,5 +517,42 @@ p {
 
 main {
   background-color: #f0f1f6;
+}
+
+.footer {
+  background-color: #232027;
+  text-align: center;
+  padding: 2rem;
+}
+
+@media screen and (min-width: 900px) {
+  .footer {
+    text-align: left;
+  }
+}
+
+.footer__list-box {
+  margin-block: 2.3rem;
+}
+
+.footer__list-title {
+  font-size: 1.8rem;
+}
+
+.footer__list-link {
+  color: #dddcdf;
+  cursor: pointer;
+  margin-block: 1.5rem;
+  font-size: 1.4rem;
+}
+
+@media screen and (min-width: 900px) {
+  .footer__list-link {
+    font-size: 1.6rem;
+  }
+}
+
+.footer__media-icons {
+  margin: 2rem 1.2rem;
 }
 /*# sourceMappingURL=main.css.map */

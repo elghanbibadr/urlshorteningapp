@@ -8,5 +8,10 @@
     .grid--cls2{
         grid-template-columns: 1fr 1fr;
     }
+    .grid--cls5{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+    }
 
 }
