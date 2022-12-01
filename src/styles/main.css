@@ -15,6 +15,10 @@ body {
   padding: 1rem;
 }
 
+main {
+  background-color: #f0f1f6;
+}
+
 ul {
   list-style: none;
 }
@@ -515,10 +519,6 @@ p {
   font-size: 3rem;
 }
 
-main {
-  background-color: #f0f1f6;
-}
-
 .footer {
   background-color: #232027;
   text-align: center;
@@ -542,8 +542,15 @@ main {
 .footer__list-link {
   color: #dddcdf;
   cursor: pointer;
+  font-weight: 500;
   margin-block: 1.5rem;
   font-size: 1.4rem;
+  -webkit-transition: color 0.4s;
+  transition: color 0.4s;
+}
+
+.footer__list-link:hover {
+  color: #2bd1d1;
 }
 
 @media screen and (min-width: 900px) {
@@ -554,5 +561,14 @@ main {
 
 .footer__media-icons {
   margin: 2rem 1.2rem;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+}
+
+.footer__media-icons:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 /*# sourceMappingURL=main.css.map */

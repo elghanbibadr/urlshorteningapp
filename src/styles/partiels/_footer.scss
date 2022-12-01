@@ -1,0 +1,43 @@
+.footer {
+    background-color: $footerbg;
+    text-align: center;
+    padding: 2rem;
+
+    @include tablette {
+        text-align: left;
+    }
+
+    &__list-box {
+        margin-block: 2.3rem;
+    }
+
+    &__list-title {
+        font-size: 1.8rem;
+    }
+
+    &__list-link {
+        color: $darkLight;
+        cursor: pointer;
+        font-weight: 500;
+        margin-block: 1.5rem;
+        font-size: 1.4rem;
+        transition: color 0.4s;
+
+        &:hover {
+            color: $lightCyan;
+        }
+
+        @include tablette {
+            font-size: 1.6rem;
+        }
+    }
+
+    &__media-icons {
+        margin: 2rem 1.2rem;
+        transition: transform 0.4s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
