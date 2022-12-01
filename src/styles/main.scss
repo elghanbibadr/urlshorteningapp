@@ -10,26 +10,10 @@
 @import './partiels/grid';
 @import './partiels/urlShorteningContainer';
 @import './partiels/statistics';
-
+@import './partiels/callout';
 
 
 main{
     background-color: #f0f1f6;
 
-}
-.callout{
-    background-color: $darkBlue;
-    text-align: center;
-    margin-top: 6rem;
-    padding: 4rem 2rem;
-    border-radius: 5px;
-    @include tablette{
-        margin-top: 12rem;
-    }
-    &__title{
-   color: white;
-   font-weight: bold;
-   margin-block: 3rem;
-   font-size: 3rem;
-    }
 }

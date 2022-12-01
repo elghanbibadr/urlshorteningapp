@@ -486,10 +486,6 @@ p {
   bottom: -5rem;
 }
 
-main {
-  background-color: #f0f1f6;
-}
-
 .callout {
   background-color: #4b406b;
   text-align: center;
@@ -509,5 +505,9 @@ main {
   font-weight: bold;
   margin-block: 3rem;
   font-size: 3rem;
+}
+
+main {
+  background-color: #f0f1f6;
 }
 /*# sourceMappingURL=main.css.map */
